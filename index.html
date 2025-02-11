@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>untoldcoding</title>
+    <title>IshaXmomin</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,8 +14,18 @@
     </div>
 
     <!-- Add the audio element here -->
-    <audio id="background-audio" src="world_was_ending.webm" autoplay hidden></audio>
+    <audio id="background-audio" src="world_was_ending.webm" hidden></audio>
 
     <script src="untoldcoding.js"></script>
+    <script>
+      // Function to play the audio
+      function playAudio() {
+        var audio = document.getElementById('background-audio');
+        audio.play();
+      }
+
+      // Add event listener to play audio on user interaction
+      document.addEventListener('click', playAudio);
+    </script>
   </body>
 </html>
